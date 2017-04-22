@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-commerce Camisetas Pull & Bear</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false">
+          <span class="sr-only">Mobile Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="img/logo.png" class="img-nav">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-mobile">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            Canasta
+          </a></li>
+          <li>
+            <a href="/">
+              <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+              Salir
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="col-md-4 margin-bottom">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Buscar camisetas">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+        </span>
+      </div>
+
+      <aside class="hidden-xs hidden-sm">
+        <h2>Categorías</h2>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">
+            <span class="badge">101</span>
+            Todos
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="badge">54</span>
+            Nuevo
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="badge">150</span>
+            Ropa
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="badge">34</span>
+            Zapatos
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="badge">87</span>
+            Accesorios
+          </a>
+          <a href="#" class="list-group-item">
+            <span class="badge">25</span>
+            MM93 x Pull&Bear
+          </a>
+        </div>
+      </aside>
+    </div>
+    <div class="col-md-8">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="img/carousel1.jpg" alt="Imagen 1">
+          </div>
+          <div class="item">
+            <img src="img/carousel2.jpg" alt="Imagen 2">
+          </div>
+          <div class="item">
+            <img src="img/carousel3.jpg" alt="Imagen 3">
+          </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      <div class="row margin-top">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/producto1.jpg" alt="Producto 1">
+            <div class="caption">
+              <h3>Paint-effect print</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>
+                <a href="#" class="btn btn-primary" role="button">
+                  $37.99
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </a>
+
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#producto1-modal">
+                  Detalles
+                </button>
+
+                <div class="modal fade" id="producto1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Paint-effect print</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="alert alert-info" role="alert">
+                          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                          Este producto esta agotado
+                        </div>
+                        <div class="row margin-bottom">
+                          <div class="col-md-6">
+                            <a href="#" class="thumbnail">
+                              <img src="img/producto1.jpg" alt="Modal Producto 1">
+                            </a>
+                          </div>
+                          <div class="col-md-6">
+                            <p>Precio: <strong>$37.99</strong></p>
+                            <p>
+                              Calificación:
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                            </p>
+                            <p>
+                              <span class="label label-info">Camiseta</span>
+                              <span class="label label-success">Nuevo</span>
+                            </p>
+                            <a href="#">
+                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a href="#descripcion" aria-controls="descripcion" role="tab" data-toggle="tab">Descripción</a>
+                            </li>
+                            <li role="presentation">
+                              <a href="#comentarios" aria-controls="comentarios" role="tab" data-toggle="tab">Comentarios</a>
+                            </li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content margin-top">
+                            <div role="tabpanel" class="tab-pane active" id="descripcion">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi qui tempore esse rerum facere ducimus officiis veritatis ipsum atque. Pariatur, provident numquam quod aut reprehenderit, aliquid tempora odio quidem nemo!
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="comentarios">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">Mateo Olarte comentó hace 15 días</div>
+                                <div class="panel-body">
+                                  Excelente camiseta, el estilo es muy elegante
+                                </div>
+                              </div>
+                              <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary text-uppercase">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/producto2.jpg" alt="Producto 2">
+            <div class="caption">
+              <h3>All-over print</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>
+                <a href="#" class="btn btn-primary" role="button">
+                  $34.99
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </a>
+
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#producto2-modal">
+                  Detalles
+                </button>
+
+                <div class="modal fade" id="producto2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">All-over print</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="alert alert-success" role="alert">
+                          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                          Este producto esta disponible
+                        </div>
+                        <div class="row margin-bottom">
+                          <div class="col-md-6">
+                            <a href="#" class="thumbnail">
+                              <img src="img/producto2.jpg" alt="Modal Producto 2">
+                            </a>
+                          </div>
+                          <div class="col-md-6">
+                            <p>Precio: <strong>$34.99</strong></p>
+                            <p>
+                              Calificación:
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </p>
+                            <p>
+                              <span class="label label-info">Camiseta</span>
+                              <span class="label label-success">Nuevo</span>
+                            </p>
+                            <a href="#">
+                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a href="#descripcion" aria-controls="descripcion" role="tab" data-toggle="tab">Descripción</a>
+                            </li>
+                            <li role="presentation">
+                              <a href="#comentarios" aria-controls="comentarios" role="tab" data-toggle="tab">Comentarios</a>
+                            </li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content margin-top">
+                            <div role="tabpanel" class="tab-pane active" id="descripcion">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi qui tempore esse rerum facere ducimus officiis veritatis ipsum atque. Pariatur, provident numquam quod aut reprehenderit, aliquid tempora odio quidem nemo!
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="comentarios">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">Mateo Olarte comentó hace 15 días</div>
+                                <div class="panel-body">
+                                  Excelente camiseta, el estilo es muy elegante
+                                </div>
+                              </div>
+                              <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary text-uppercase">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="img/producto3.jpg" alt="Producto 3">
+            <div class="caption">
+              <h3>Striped round neck</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>
+                <a href="#" class="btn btn-primary" role="button">
+                  $41.99
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </a>
+
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#producto3-modal">
+                  Detalles
+                </button>
+
+                <div class="modal fade" id="producto3-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Striped round neck</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="alert alert-warning" role="alert">
+                          <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+                          Este producto quedan pocas unidades
+                        </div>
+                        <div class="row margin-bottom">
+                          <div class="col-md-6">
+                            <a href="#" class="thumbnail">
+                              <img src="img/producto3.jpg" alt="Modal Producto 2">
+                            </a>
+                          </div>
+                          <div class="col-md-6">
+                            <p>Precio: <strong>$41.99</strong></p>
+                            <p>
+                              Calificación:
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                              <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                            </p>
+                            <p>
+                              <span class="label label-info">Camiseta</span>
+                              <span class="label label-success">Nuevo</span>
+                            </p>
+                            <a href="#">
+                              <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                              Agregar a los deseos
+                            </a>
+                          </div>
+                        </div>
+                        <div>
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a href="#descripcion" aria-controls="descripcion" role="tab" data-toggle="tab">Descripción</a>
+                            </li>
+                            <li role="presentation">
+                              <a href="#comentarios" aria-controls="comentarios" role="tab" data-toggle="tab">Comentarios</a>
+                            </li>
+                          </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content margin-top">
+                            <div role="tabpanel" class="tab-pane active" id="descripcion">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi qui tempore esse rerum facere ducimus officiis veritatis ipsum atque. Pariatur, provident numquam quod aut reprehenderit, aliquid tempora odio quidem nemo!
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="comentarios">
+                              <div class="panel panel-default">
+                                <div class="panel-heading">Mateo Olarte comentó hace 15 días</div>
+                                <div class="panel-body">
+                                  Excelente camiseta, el estilo es muy elegante
+                                </div>
+                              </div>
+                              <textarea class="form-control" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary text-uppercase">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

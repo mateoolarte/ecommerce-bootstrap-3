@@ -1,0 +1,24 @@
+/* Reset */
+body {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+/* Navigation */
+
+.navbar {
+  border-radius: 0;
+}
+
+.img-nav {
+  height: 20px;
+}
+
+/* Utilities */
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
